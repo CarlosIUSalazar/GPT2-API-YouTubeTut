@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GPT2 API Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://cdnjs.deepai.org/deepai.min.js"></script>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@0.2.3/dist/bubbly-bg.js"></script>
+        <script>bubbly({
+          colorStart: '#FFF456',
+          colorStop: '#00ffff',
+          bubbleFunc:() => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`
+        });</script>
+
+        <center>
+            <h1>GPT2 API Text Generator</h1>
+            <textarea id="myText" 
+                name="myTextArea" 
+                rows="5" 
+                cols="100" 
+                placeholder="Insert here your text...">
+            </textarea>
+            <p></p>
+            <button id="submitButton" onClick="submitText()">Submit Text To GPT-2</button>
+            <p></p>
+            <textarea id="myText2"
+                name="myTextArea2"
+                rows="20"
+                cols="100"
+                placeholder="Output goes here...">
+            </textarea>
+            <p></p>
+        </center>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="./script.js" async defer></script>
+    </body>
+</html>
